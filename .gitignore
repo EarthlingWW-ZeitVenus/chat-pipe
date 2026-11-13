@@ -1,0 +1,9 @@
+# Python bytecode и кэш
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Временные файлы и бэкапы
+*.bak-*
+*~

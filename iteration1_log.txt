@@ -1,0 +1,157 @@
+=== 1. ТЕСТЫ ===
+test_automation_never_touches_cards_handled_by_a_human (test_chatpipe.TestAnnotations.test_automation_never_touches_cards_handled_by_a_human) ... ok
+test_file_roundtrip_and_validation (test_chatpipe.TestAnnotations.test_file_roundtrip_and_validation) ... ok
+test_ready_needs_a_label_and_confirms_machine_labels (test_chatpipe.TestAnnotations.test_ready_needs_a_label_and_confirms_machine_labels) ... ok
+test_removing_last_label_returns_card_to_new (test_chatpipe.TestAnnotations.test_removing_last_label_returns_card_to_new) ... ok
+test_rule_rollback_keeps_confirmed_labels (test_chatpipe.TestAnnotations.test_rule_rollback_keeps_confirmed_labels) ... ok
+test_several_rules_can_label_one_untouched_card (test_chatpipe.TestAnnotations.test_several_rules_can_label_one_untouched_card) ... ok
+test_session_skips_cards_with_skip_reason_on_load (test_chatpipe.TestAutoSkip.test_session_skips_cards_with_skip_reason_on_load) ... ok
+test_store_auto_skip (test_chatpipe.TestAutoSkip.test_store_auto_skip) ... ok
+test_check_is_skipped_when_lemmas_disabled (test_chatpipe.TestCompat.test_check_is_skipped_when_lemmas_disabled) ... ok
+test_cpu_info_is_readable_or_absent (test_chatpipe.TestCompat.test_cpu_info_is_readable_or_absent) ... ok
+test_illegal_instruction_is_detected (test_chatpipe.TestCompat.test_illegal_instruction_is_detected) ... ok
+test_missing_library_is_detected (test_chatpipe.TestCompat.test_missing_library_is_detected) ... ok
+test_working_library_is_ok (test_chatpipe.TestCompat.test_working_library_is_ok) ... ok
+test_bad_file_reports_all_problems_with_line_numbers (test_chatpipe.TestDictionary.test_bad_file_reports_all_problems_with_line_numbers) ... ok
+test_changing_preferred_word_changes_labels (test_chatpipe.TestDictionary.test_changing_preferred_word_changes_labels) ... ok
+test_file_roundtrip (test_chatpipe.TestDictionary.test_file_roundtrip) ... ok
+test_label_is_built_from_the_path (test_chatpipe.TestDictionary.test_label_is_built_from_the_path) ... ok
+test_rules_of_the_dictionary_are_enforced (test_chatpipe.TestDictionary.test_rules_of_the_dictionary_are_enforced) ... ok
+test_search_prefers_exact_matches (test_chatpipe.TestDictionary.test_search_prefers_exact_matches) ... ok
+test_code_is_not_counted (test_chatpipe.TestKeywords.test_code_is_not_counted) ... ok
+test_sentences_with_word (test_chatpipe.TestKeywords.test_sentences_with_word) ... ok
+test_significant_words_are_found (test_chatpipe.TestKeywords.test_significant_words_are_found) ... ok
+test_concept_terms (test_chatpipe.TestRules.test_concept_terms) ... ok
+test_engine_respects_modes_and_human_work (test_chatpipe.TestRules.test_engine_respects_modes_and_human_work) ... ok
+test_expressions (test_chatpipe.TestRules.test_expressions) ... ok
+test_numbered_words_are_expanded (test_chatpipe.TestRules.test_numbered_words_are_expanded) ... ok
+test_rules_file_roundtrip (test_chatpipe.TestRules.test_rules_file_roundtrip) ... ok
+test_syntax_errors_are_explained (test_chatpipe.TestRules.test_syntax_errors_are_explained) ... ok
+test_bad_json_line_is_reported_with_number (test_chatpipe.TestSchema.test_bad_json_line_is_reported_with_number) ... ok
+test_bool_is_not_a_number (test_chatpipe.TestSchema.test_bool_is_not_a_number) ... ok
+test_missing_and_wrong_fields_are_reported (test_chatpipe.TestSchema.test_missing_and_wrong_fields_are_reported) ... ok
+test_time_requires_timezone (test_chatpipe.TestSchema.test_time_requires_timezone) ... ok
+test_valid_card_has_no_problems (test_chatpipe.TestSchema.test_valid_card_has_no_problems) ... ok
+test_write_read_roundtrip_and_order_checks (test_chatpipe.TestSchema.test_write_read_roundtrip_and_order_checks) ... ok
+test_write_and_read_roundtrip (test_chatpipe.TestServiceTexts.test_write_and_read_roundtrip) ... ok
+test_defaults_roundtrip_with_comments (test_chatpipe.TestSettings.test_defaults_roundtrip_with_comments) ... ok
+test_syntax_error_has_the_right_line_number (test_chatpipe.TestSettings.test_syntax_error_has_the_right_line_number) ... ok
+test_user_values_survive_resave_and_urls_with_slashes_are_safe (test_chatpipe.TestSettings.test_user_values_survive_resave_and_urls_with_slashes_are_safe) ... ok
+test_full_labeling_session (test_chatpipe.TestStage2EndToEnd.test_full_labeling_session) ... ok
+test_non_interactive_commands (test_chatpipe.TestStage2EndToEnd.test_non_interactive_commands) ... Ошибка: файл карточек не найден: /нет/такого.jsonl. Сначала запустите этап 1 (python3 run_stage1.py ...) или укажите путь флагом --cards.
+ok
+test_id_does_not_depend_on_timezone_name (test_chatpipe.TestTakeoutCardParsing.test_id_does_not_depend_on_timezone_name) ... ok
+test_kind_is_normalized (test_chatpipe.TestTakeoutCardParsing.test_kind_is_normalized) ... ok
+test_non_prompted_records_get_skip_reason (test_chatpipe.TestTakeoutCardParsing.test_non_prompted_records_get_skip_reason) ... ok
+test_service_block_is_cut_out_and_replaced_by_marker (test_chatpipe.TestTakeoutCardParsing.test_service_block_is_cut_out_and_replaced_by_marker) ... ok
+test_html_to_md_keeps_special_characters_in_code (test_chatpipe.TestTextTools.test_html_to_md_keeps_special_characters_in_code) ... ok
+test_longer_fence_protects_inner_fences (test_chatpipe.TestTextTools.test_longer_fence_protects_inner_fences) ... ok
+test_redaction_masks_secrets (test_chatpipe.TestTextTools.test_redaction_masks_secrets) ... ok
+test_split_blocks_separates_code_and_text (test_chatpipe.TestTextTools.test_split_blocks_separates_code_and_text) ... ok
+test_strip_code_keeps_only_text (test_chatpipe.TestTextTools.test_strip_code_keeps_only_text) ... ok
+test_bundles_are_written_split_and_valid (test_chatpipe.TestXmlAndBundles.test_bundles_are_written_split_and_valid) ... ok
+test_cdata_survives_a_real_xml_parser (test_chatpipe.TestXmlAndBundles.test_cdata_survives_a_real_xml_parser) ... ok
+test_illegal_characters_are_removed (test_chatpipe.TestXmlAndBundles.test_illegal_characters_are_removed) ... ok
+
+----------------------------------------------------------------------
+Ran 52 tests in 22.718s
+
+OK
+
+=== 2. СТАДИЯ 2 (run_stage1.py) ===
+Проверка совместимости. Python: /home/earthling/Python/venv/bin/python3
+  Процессор: Intel(R) Core(TM)2 Duo CPU     T5670  @ 1.80GHz
+  Инструкции: sse2 да, ssse3 да, sse4_1 нет, sse4_2 нет, popcnt нет, avx нет, avx2 нет
+  pymorphy3 (начальные формы русских слов): ОК
+Профиль источника: gemini-takeout-html (из файла настроек)
+Найдено карточек: 2985
+  ...500/2985
+  ...1000/2985
+  ...1500/2985
+  ...2000/2985
+  ...2500/2985
+Вырезано служебных текстов: 44 (файл chatpipe_service-files_stage1.md)
+
+Готово. Файлы в папке: /home/earthling/Python/chatpipe-project/output
+ОТЧЁТ ЭТАПА 1 (chatpipe 0.1.0)
+============================================================
+Профиль источника: gemini-takeout-html
+Размер исходного файла: 19.6 МиБ
+Карточек найдено адаптером: 2985
+Карточек в результате: 2985
+Дубликатов убрано (одинаковый id): 0
+
+Диагностика адаптера:
+  карточек не удалось разобрать: 0
+  карточек без распознанного времени: 0
+  время без известного пояса (принято за UTC): 0
+  ячейка найдена запасным способом: 0
+  упоминаний «служебный файл» в тексте без блока (шум, оставлены в тексте): 61
+
+Период: 2026-01-15 .. 2026-07-18
+Карточек по месяцам: 2026-01: 318, 2026-02: 809, 2026-03: 649, 2026-04: 424, 2026-05: 364, 2026-06: 325, 2026-07: 96
+
+Типы записей:
+    2899  Prompted
+      69  Created Gemini Canvas
+      17  Gave feedback
+
+Объём текста (символы):
+  запросы:            1,764,967  (18%)
+  ответы:             8,215,734  (82%)
+  служебные блоки:       46,187  (0%)
+
+Служебные файлы проекта:
+  карточек с блоком: 44 из 2985
+  уникальных версий: 44
+
+Паузы между соседними карточками (медиана 10.0 мин):
+     < 2 мин: 164
+     2-5 мин: 540
+    5-15 мин: 1279
+   15-30 мин: 444
+   30-60 мин: 219
+       1-3 ч: 140
+      3-12 ч: 69
+      > 12 ч: 129
+
+Самые большие карточки (символы ответа):
+     24,006  2026-04-11T13:17:18+03:00  'Начать исследование'
+     22,211  2026-06-11T13:50:38+03:00  '"Вопрос: Согласен ли ты, что я жестко пропишу путь к логам в'
+     20,999  2026-05-25T09:14:46+03:00  'Начать исследование'
+     19,228  2026-04-01T08:43:08+03:00  'Начать исследование'
+     18,509  2026-04-13T10:05:37+03:00  'Начать исследование'
+
+ЗАМАСКИРОВАННЫЕ СЕКРЕТЫ (только счётчики, значения нигде не хранятся):
+      25  env_secret
+      11  url_credentials
+       3  openai_like_key
+       1  google_api_key
+
+real	2m44,597s
+user	1m4,947s
+sys	0m3,517s
+
+=== 3. ПРОВЕРКА МЕТОК-ЗАМЕНИТЕЛЕЙ ===
+44
+44
+
+=== 4. СТАДИЯ 3, СТАТИСТИКА ===
+Проверка совместимости. Python: /home/earthling/Python/venv/bin/python3
+  Процессор: Intel(R) Core(TM)2 Duo CPU     T5670  @ 1.80GHz
+  Инструкции: sse2 да, ssse3 да, sse4_1 нет, sse4_2 нет, popcnt нет, avx нет, avx2 нет
+  pymorphy3 (начальные формы русских слов): ОК
+Карточек всего: 2985
+
+Статусы:
+  new         2899  (97.1%)  новые (без меток)
+  proposed       0  ( 0.0%)  предложено правилами
+  tagged         0  ( 0.0%)  размечены, но не 'готово'
+  ready          0  ( 0.0%)  готовы к компоновке
+  skipped       86  ( 2.9%)  пропущены
+
+Понятий в словаре: 9, правил: 0
+
+real	0m10,547s
+user	0m3,333s
+sys	0m0,781s
